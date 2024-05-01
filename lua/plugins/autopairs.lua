@@ -1,6 +1,5 @@
 return {
-  'windwp/nvim-autopairs',
+  "windwp/nvim-autopairs",
   event = "InsertEnter",
-  config = true
+  config = true,
 }
-
