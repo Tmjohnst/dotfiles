@@ -23,6 +23,7 @@ return {
       lspconfig.html.setup({ capabilities = capabilities })
       lspconfig.tsserver.setup({ capabilities = capabilities })
       lspconfig.angularls.setup({ capabilities = capabilities })
+      lspconfig.eslint.setup({ capabilities = capabilities })
       require("lspconfig").gopls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
