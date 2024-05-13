@@ -27,7 +27,7 @@ return {
       lspconfig.emmet_ls.setup({ capabilities = capabilities })
       require("lspconfig").gopls.setup({})
 
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "M", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
     end,

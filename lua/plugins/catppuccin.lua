@@ -13,6 +13,6 @@ return {
   priority = 1000,
   config = function()
     vim.cmd.colorscheme("catppuccin-frappe")
-    vim.keymap.set('n', '<C-l>', ':lua ToggleCatppuccin()<CR>', { noremap = true, silent = true })
+    --    vim.keymap.set('n', '<C-l>', ':lua ToggleCatppuccin()<CR>', { noremap = true, silent = true })
   end,
 }
