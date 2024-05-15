@@ -28,3 +28,7 @@ vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true, silent = true 
 
 -- Close current buffer with Ctrl+Q
 vim.api.nvim_set_keymap("n", "<C-q>", ":bd<CR>", { noremap = true, silent = true })
+
+-- Jump to next issue in file
+vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
+vim.keymap.set("n", "{g", vim.diagnostic.goto_next)
