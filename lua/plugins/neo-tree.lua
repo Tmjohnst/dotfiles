@@ -11,6 +11,9 @@ return {
     local neotree = require("neo-tree")
     neotree.setup({
       close_if_last_window = false,
+      git_status = {
+        git_base = "master", -- Set the default git base to "master"
+      },
       filesystem = {
         follow_current_file = {
           enabled = true
