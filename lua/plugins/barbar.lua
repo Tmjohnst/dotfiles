@@ -1,7 +1,7 @@
 return {
   "romgrk/barbar.nvim",
   dependencies = {
-    "lewis6991/gitsigns.nvim",   -- OPTIONAL: for git status
+    "lewis6991/gitsigns.nvim",     -- OPTIONAL: for git status
     "nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
   },
   init = function()
@@ -10,8 +10,8 @@ return {
     local opts = { noremap = true, silent = true }
 
     -- Move to previous/next
-    map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
-    map("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
+    map("n", "<A-h>", "<Cmd>BufferPrevious<CR>", opts)
+    map("n", "<A-l>", "<Cmd>BufferNext<CR>", opts)
     -- Re-order to previous/next
     map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
     map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
