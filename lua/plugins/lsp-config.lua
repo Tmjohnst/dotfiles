@@ -4,6 +4,11 @@ return {
     config = function()
       require("mason").setup()
     end,
+    opts = {
+      ensure_installed = {
+        "prettierd"
+      }
+    }
   },
   {
     "williamboman/mason-lspconfig.nvim",
