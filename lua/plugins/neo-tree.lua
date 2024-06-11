@@ -8,11 +8,9 @@ return {
   },
   config = function()
     vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>")
-    require("neo-tree").setup({
+    local neotree = require("neo-tree");
+    neotree.setup({
       close_if_last_window = false,
-      git_status = {
-        git_base = "master", -- Set the default git base to "master"
-      },
       filesystem = {
         follow_current_file = {
           enabled = true
@@ -24,6 +22,8 @@ return {
         }
       }
     })
+
+    vim.cmd("Neotree git_base=master")
     require("neo-tree.sources.manager").focus("filesystem")
   end,
 }
