@@ -32,3 +32,6 @@ vim.api.nvim_set_keymap("n", "<C-q>", ":bd<CR>", { noremap = true, silent = true
 -- Jump to next issue in file
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "{g", vim.diagnostic.goto_next)
+
+-- Quick quit with Save
+vim.keymap.set("n", "<C-q>", ":wqa<CR>", { noremap = true, silent = true })
