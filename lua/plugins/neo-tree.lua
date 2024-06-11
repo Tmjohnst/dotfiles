@@ -7,9 +7,8 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function()
-    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
-    local neotree = require("neo-tree")
-    neotree.setup({
+    vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>")
+    require("neo-tree").setup({
       close_if_last_window = false,
       git_status = {
         git_base = "master", -- Set the default git base to "master"
